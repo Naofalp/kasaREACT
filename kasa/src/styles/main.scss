@@ -1,1 +1,7 @@
 /* Dans ce main j'importerai tout les style, variables, base..., il n'y aura rien d'autre que des imports*/
+
+@import "./variables.scss";
+@import "./base.scss";
+
+@import "./components/Header.scss";
+@import "./components/Nav.scss"
