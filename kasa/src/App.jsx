@@ -7,7 +7,8 @@ import { Header } from "./Header.jsx"
 function App() {
   return (
     <Router>
-      <div>
+      <Header />
+      <main>
         <Routes>
           {/* Route page d'acceuil Home*/}
           <Route path="/" element={<Home />} />
@@ -18,7 +19,8 @@ function App() {
           {/* Route page d'erreur Error */}
           <Route path='/Error' element={<Error />} />
         </Routes>
-      </div>
+      </main>
+      <Footer />
     </Router>
   )
 }
