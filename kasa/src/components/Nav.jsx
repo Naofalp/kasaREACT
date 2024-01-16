@@ -1,6 +1,6 @@
 import { NavLink, Outlet } from "react-router-dom";
 
-export default function Header() {
+export default function Nav() {
     return <>
         <nav>
             <NavLink to="/">

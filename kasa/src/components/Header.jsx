@@ -1,17 +1,13 @@
-import { NavLink, Outlet } from "react-router-dom";
+import Nav from './Nav';
+import logoKasa from '../assets/logoKasa.svg';
 
-export function Header () {
+export default function Header() {
     return <>
-    <header>
-        <nav>
-            <NavLink to ="/">Acceuil</NavLink>
-            <NavLink to ="/Apropos">A propos</NavLink>
-        </nav>
-    </header>
-    <div>
-        <Outlet/>
-    </div>
+        <header>
+            <figure>
+                <img src={logoKasa} alt="logo de l'agence immobilière Kasa" />
+            </figure>
+            <Nav />
+        </header>
     </>
 }
-
-export default Header
