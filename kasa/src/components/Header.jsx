@@ -3,7 +3,7 @@ import logoKasa from '../assets/logoKasa.svg';
 
 export default function Header() {
     return <>
-        <header>
+        <header className='headerBand'>
             <figure>
                 <img src={logoKasa} alt="logo de l'agence immobilière Kasa" />
             </figure>

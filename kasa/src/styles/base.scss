@@ -6,17 +6,17 @@
 }
 
 body {
-	margin-top: 45px;
+	padding-top: 45px;
+	margin: auto;
 	@media (min-width: $breakpoint-desktop) {
 		max-width: 100%;
 	}
 }
 
 main {
-	margin: 5%;
 
 	@media screen and (min-width: $breakpoint-desktop) {
-		margin: 0 100px;
+		margin: 50px 5%;
 	}
 }
 

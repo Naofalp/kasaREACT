@@ -1,7 +1,20 @@
-.nav-header{
+.nav-header {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    gap: 57px;
     display: flex;
-    color: $primary-color
+    width: 100%;
+
+    &_link {
+        color: $primary-color;
+        text-decoration: none;
+        font-size: $big-fontsize;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+
 }
