@@ -8,6 +8,7 @@
 body {
 	padding-top: 45px;
 	margin: auto;
+
 	@media (min-width: $breakpoint-desktop) {
 		max-width: 100%;
 	}

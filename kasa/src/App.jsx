@@ -1,16 +1,24 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Header from "./components/Header";
+import Home from "./Pages/Home";
+{/*
+import About 
+import Header 
+import FicheLogement 
+import Footer from 
+import Error from 
+*/}
 
 
 function App() {
   return (
     <Router>
-      <Header/>
+      <Header />
       <main>
         <Routes>
           {/* Route page d'acceuil Home*/}
-          <Route path="/" element= {<div>Home</div>} />
+          <Route path="/" element={<Home />} />
           {/* Route page Apropos */}
           <Route path="/Apropos" element={<div>Apropos</div>} />
           {/* Route page Logements */}
