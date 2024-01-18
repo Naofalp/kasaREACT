@@ -2,8 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./Pages/Home";
-
-// import Apropos from "./Pages/Apropos.jsx";
+import Apropos from "./Pages/Apropos.jsx";
 // import Logements from "./Pages/Logements.jsx"
 // import Error from "./Pages/Error.jsx";
 
@@ -19,7 +18,7 @@ function App() {
           {/* Route page d'acceuil Home*/}
           <Route path="/" element={<Home />} />
           {/* Route page Apropos */}
-          <Route path="/Apropos" element={<div>mettre fonction quand la page sera faite</div>} />
+          <Route path="/Apropos" element={<Apropos />} />
           {/* Route page Logements */}
           <Route path="/Logement/:id" element={<div>component=logement</div>} />
           {/* Route page d'erreur Error */}
