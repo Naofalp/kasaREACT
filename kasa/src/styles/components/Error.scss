@@ -1,0 +1,30 @@
+.error {
+    &_container {
+        padding-top: 89px;
+        padding-bottom: 89px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 139px;
+        align-items: center;
+    }
+
+    &_number {
+        color: $primary_color;
+        font-size: 288px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    &_text {
+        color: $primary_color;
+        font-size: 36px;
+        margin: 0;
+    }
+
+    &_link {
+        color: $primary_color;
+        font-size: $basic-fontsize;
+        margin: 0;
+    }
+}
