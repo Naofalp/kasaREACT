@@ -1,0 +1,19 @@
+.footerBand {
+    background-color: black;
+    height: 209px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    &_img {
+        height: 40px;
+    }
+
+    &_text {
+        color: $tertiary-color;
+        font-size: $big-fontsize;
+        margin: 0;
+    }
+}

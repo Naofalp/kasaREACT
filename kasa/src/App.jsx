@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./Pages/Home";
+import Footer from "./components/Footer"
 {/*
 import About 
 import Header 
@@ -27,6 +28,7 @@ function App() {
           <Route path='/Error' element={<div>Error</div>} />
         </Routes>
       </main>
+      <Footer />
     </Router>
   )
 }

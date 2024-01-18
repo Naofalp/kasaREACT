@@ -1,0 +1,8 @@
+.footerBand {
+  background-color: black;
+  height: 209px;
+  display: flex;
+}
+.footerBand_img {
+  height: 40px;
+}

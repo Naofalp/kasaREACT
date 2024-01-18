@@ -2,7 +2,6 @@
 /* Mettre le lien des images
 $about-background: $background-color url(../../assets/images/about-background.png);
 $about-background-mobile: $background-color url(../../assets/images/mobile-about-background.png);
-$banner-background: $background-color url(../../assets/images/background-banner.png);
 */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
@@ -24,12 +23,6 @@ body {
   main {
     margin: 50px 5%;
   }
-}
-
-h1 {
-  font-size: 48px;
-  font-weight: 500;
-  color: #FFFFFF;
 }
 
 .redFont {
@@ -101,6 +94,19 @@ h1 {
   text-decoration: underline;
 }
 
-/*
-importer les composants
-*/
+.banner {
+  background: rgba(0, 0, 0, 0.3) url(../assets/bannerHome.png);
+  border-radius: 25px;
+  background-size: cover;
+  width: 100%;
+  height: 223px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-blend-mode: darken;
+}
+.banner_title {
+  font-size: 48px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
