@@ -1,6 +1,5 @@
 /* Dans ce main j'importerai tout les style, variables, base..., il n'y aura rien d'autre que des imports*/
 /* Mettre le lien des images
-$about-background: $background-color url(../../assets/images/about-background.png);
 $about-background-mobile: $background-color url(../../assets/images/mobile-about-background.png);
 */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -90,7 +89,11 @@ body {
   text-decoration: none;
   font-size: 24px;
 }
-.nav-header_link:hover, .nav-header_link:focus {
+.nav-header_link:hover {
+  text-decoration: underline;
+}
+
+.active {
   text-decoration: underline;
 }
 
@@ -110,3 +113,71 @@ body {
   font-weight: 400;
   color: #FFFFFF;
 }
+
+.card_container {
+  margin-top: 40px;
+  border-radius: 25px;
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 400px;
+}
+
+.banner_Apropos {
+  background: rgba(0, 0, 0, 0.3) url(../assets/bannerApropos.png);
+  border-radius: 25px;
+  background-size: cover;
+  width: 100%;
+  height: 223px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-blend-mode: darken;
+}
+
+.error_container {
+  padding-top: 89px;
+  padding-bottom: 89px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 139px;
+  align-items: center;
+}
+.error_number {
+  color: #ff6060;
+  font-size: 288px;
+  font-weight: 700;
+  margin: 0;
+}
+.error_text {
+  color: #ff6060;
+  font-size: 36px;
+  margin: 0;
+}
+.error_link {
+  color: #ff6060;
+  font-size: 18px;
+  margin: 0;
+}
+
+.footerBand {
+  background-color: black;
+  height: 209px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.footerBand_img {
+  height: 40px;
+}
+.footerBand_text {
+  color: #FFFFFF;
+  font-size: 24px;
+  margin: 0;
+}
+
+/*
+importer les composants
+*/
