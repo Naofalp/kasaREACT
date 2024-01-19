@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
 import BannerHome from "../components/BannerHome";
 import CardLogements from "../components/CardLogements";
+
 
 export default function Home() {
     return <>
