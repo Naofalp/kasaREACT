@@ -1,18 +1,22 @@
 .card {
 
     &_container {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(307px, 340px));
         margin-top: 40px;
         border-radius: 25px;
-        background-color: #f6f6f6;
+        background-color: $secondary-color;
         width: 100%;
-        align-content: space-around;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        grid-row-gap: 50px;
+        grid-column-gap: 60px;
+        padding: 50px;
+        justify-content: center;
     }
 
     &_link {
         text-decoration: none;
+        width: 340px;
+        height: 340px;
     }
 
     &_article {
