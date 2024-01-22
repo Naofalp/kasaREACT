@@ -10,7 +10,8 @@ export default function CardLogements({lien, cover, title}) {
     return<>
     <Link to={lien} className="card_link">
         <article className="card_article">
-            <img src={cover} alt={title}/>
+            <img src={cover} alt={title} className="card_cover"/>
+            <div className="card_shadow"></div>
             <p className="card_title">{title}</p>
         </article>
     </Link>

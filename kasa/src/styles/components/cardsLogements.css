@@ -1,0 +1,43 @@
+@charset "UTF-8";
+.card_container {
+  display: flex;
+  margin-top: 40px;
+  border-radius: 25px;
+  background-color: #f6f6f6;
+  width: 100%;
+  align-content: space-around;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card_link {
+  text-decoration: none;
+}
+.card_article {
+  position: relative;
+  border-radius: 10px;
+  width: 340px;
+  height: 340px;
+  overflow: hidden;
+  /* Cacher le débordement du shadow */
+}
+.card_cover {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.card_shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.card_title {
+  position: absolute;
+  width: 300px;
+  margin: 0;
+  left: 20px;
+  top: 268px;
+}
