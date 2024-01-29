@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import BannerHome from "../components/BannerHome";
 import CardLogements from "../components/CardLogements";
@@ -21,7 +20,7 @@ export default function Home() {
             {data.map((loc) => (
                 < CardLogements
                     key={loc.id}
-                    lien={`/logement/${loc.id}`}
+                    lien={`/Logement/${loc.id}`}
                     cover={loc.cover}
                     title={loc.title}
                     />
@@ -29,5 +28,3 @@ export default function Home() {
         </section>
     </>
 }
-
-// quand je garde que la fonction et je console.log (loc.quelquechos) ca apparait mais sinon ca renvoi un objet
