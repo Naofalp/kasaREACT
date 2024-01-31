@@ -22,7 +22,7 @@ function App() {
           {/* Route page Logements */}
           <Route path="/Logement/:id" element={<Logement />} />
           {/* Route page d'erreur Error */}
-          <Route path='/Error' element={<Error/>} />
+          <Route path='/Error' errorElement={<Error/>} />
         </Routes>
       </main>
       <Footer />
