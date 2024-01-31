@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { Carroussel } from "../components/Carroussel";
+import Carroussel from "../components/Carroussel";
+
+//Mettre ici la condition selon l'id : si l'id n'est pas referencer alors renvoi sur la page error
 
 export default function Logement() {
     const { id } = useParams();
