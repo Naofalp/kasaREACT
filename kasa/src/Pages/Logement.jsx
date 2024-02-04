@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import Carroussel from "../components/Carroussel";
 import Tag from "../components/Tag";
 import Host from "../components/Host";
-
+import Rate from "../components/Rate";
 
 //Condition selon l'id : si l'id n'est pas referencé alors renvoi sur la page error
 
@@ -37,12 +37,11 @@ export default function Logement() {
         return <div>Chargement en cours...</div>;
     }
 
-    const slidesIMG = logement.pictures;
     const tags = logement.tags;
 
     return <>
         <div className="logement-container">
-            <Carroussel slides={slidesIMG} />
+            <Carroussel slides={logement.pictures} />
             <section className="hostInfo-container">
                 <div className="title-tags-container">
                     <div className="title-container redFont">
@@ -61,6 +60,9 @@ export default function Logement() {
 								hostName={logement.host.name}
 								hostPic={logement.host.picture}
 							/>
+						</div>
+                        <div className="rate-container">
+							<Rate score={logement.rating} />
 						</div>
 					</div>
             </section>

@@ -1,8 +1,19 @@
+.rate-host-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        flex-direction: column;
+    }
+}
+
 .host_comp {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    justify-content: flex-end;
     align-items: center;
+    width: 100%;
     gap: 10px;
 }
 
@@ -29,6 +40,7 @@
 
 .host_name {
     display: flex;
+    justify-content: flex-end;
     width: 63px;
     height: 100%;
     text-align: right;
@@ -39,16 +51,5 @@
     @media screen and (min-width: $breakpoint-desktop) {
         font-size: $basic-fontsize;
         font-weight: 500;
-    }
-}
-
-.rate-host-container {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-
-    @media screen and (min-width: $breakpoint-desktop) {
-        flex-direction: column;
-        justify-content: center;
     }
 }
