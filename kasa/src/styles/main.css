@@ -164,6 +164,133 @@ body {
   font-size: 18px;
 }
 
+.carroussel_container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 255px;
+  overflow: hidden;
+}
+@media screen and (min-width: 769px) {
+  .carroussel_container {
+    height: 415px;
+  }
+}
+.carroussel_next {
+  display: flex;
+  position: absolute;
+  top: 47%;
+  right: 2%;
+  width: 12px;
+  height: 20px;
+  z-index: 10;
+  cursor: pointer;
+}
+@media screen and (min-width: 769px) {
+  .carroussel_next {
+    width: 47px;
+    height: 79px;
+    top: 42%;
+  }
+}
+.carroussel_prev {
+  display: flex;
+  position: absolute;
+  top: 47%;
+  left: 2%;
+  width: 12px;
+  height: 20px;
+  z-index: 10;
+  cursor: pointer;
+}
+@media screen and (min-width: 769px) {
+  .carroussel_prev {
+    width: 47px;
+    height: 79px;
+    top: 42%;
+  }
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity ease-in-out 0.1s;
+}
+@media screen and (min-width: 769px) {
+  .slider {
+    border-radius: 25px;
+  }
+}
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  mix-blend-mode: normal;
+  border-radius: 10px;
+}
+@media screen and (min-width: 769px) {
+  .slider img {
+    border-radius: 25px;
+  }
+}
+.slider_number {
+  display: none;
+}
+@media screen and (min-width: 769px) {
+  .slider_number {
+    display: block;
+    position: absolute;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    left: 48%;
+    top: 86%;
+  }
+}
+
+.active-anim {
+  opacity: 1;
+}
+
+.title-tags-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.title-tags-container h1 {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 430;
+}
+@media screen and (min-width: 769px) {
+  .title-tags-container h1 {
+    font-size: 36px;
+  }
+}
+.title-tags-container h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+@media screen and (min-width: 769px) {
+  .title-tags-container h3 {
+    font-size: 18px;
+  }
+}
+
 .banner_Apropos {
   background: rgba(0, 0, 0, 0.3) url(../assets/bannerApropos.png);
   border-radius: 25px;

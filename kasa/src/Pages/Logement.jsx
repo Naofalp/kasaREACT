@@ -36,12 +36,25 @@ export default function Logement() {
 
     const slidesIMG = logement && logement.pictures;
 
-    console.log(logement);
+    {/*console.log(logement)*/}
 
     return <>
         <h1>logement id : {id}</h1>
         <Carroussel slides={slidesIMG} />
+        <section className="hostInfo-container">
+            <div className="title-tags-container">
+                <div className="title-container redFont">
+                    <h1>{logement.title}</h1>
+                    <h3>{logement.location}</h3>
+                </div>
+                <div className="tags-container">
+                    {tags.map((tag) => (
+                        <Tag key={tag} tag={tag} />
+                    ))}
+                </div>
+            </div>
+        </section>
 
     </>
-    
+
 }

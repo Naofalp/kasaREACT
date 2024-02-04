@@ -1,0 +1,26 @@
+.title-tags-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    h1 {
+        margin: 0;
+        margin-bottom: 5px;
+        font-size: $basic-fontsize;
+        font-weight: 430;
+
+        @media screen and (min-width: $breakpoint-desktop) {
+            font-size: 36px;
+        }
+    }
+
+    h3 {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 400;
+
+        @media screen and (min-width: $breakpoint-desktop) {
+            font-size: $basic-fontsize;
+        }
+    }
+}
