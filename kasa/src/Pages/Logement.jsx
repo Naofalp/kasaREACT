@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Carroussel from "../components/Carroussel";
+import Tag from "../components/Tag";
 
 //Mettre ici la condition selon l'id : si l'id n'est pas referencer alors renvoi sur la page error
 
@@ -34,27 +35,26 @@ export default function Logement() {
         return <div>Chargement en cours...</div>;
     }
 
-    const slidesIMG = logement && logement.pictures;
-
-    {/*console.log(logement)*/}
+    const slidesIMG = logement.pictures;
+    const tags = logement.tags;
 
     return <>
-        <h1>logement id : {id}</h1>
-        <Carroussel slides={slidesIMG} />
-        <section className="hostInfo-container">
-            <div className="title-tags-container">
-                <div className="title-container redFont">
-                    <h1>{logement.title}</h1>
-                    <h3>{logement.location}</h3>
+        <div className="logement-container">
+            <Carroussel slides={slidesIMG} />
+            <section className="hostInfo-container">
+                <div className="title-tags-container">
+                    <div className="title-container redFont">
+                        <h1>{logement.title}</h1>
+                        <h3>{logement.location}</h3>
+                    </div>
+                    <div className="tags-container">
+                        {tags.map((tag) => (
+                            <Tag key={tag} tag={tag} />
+                        ))}
+                    </div>
                 </div>
-                <div className="tags-container">
-                    {tags.map((tag) => (
-                        <Tag key={tag} tag={tag} />
-                    ))}
-                </div>
-            </div>
-        </section>
-
+            </section>
+        </div>
     </>
 
 }
