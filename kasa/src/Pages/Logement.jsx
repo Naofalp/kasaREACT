@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Carroussel from "../components/Carroussel";
 import Tag from "../components/Tag";
+import Host from "../components/Host";
+
 
 //Condition selon l'id : si l'id n'est pas referencé alors renvoi sur la page error
 
@@ -54,14 +56,11 @@ export default function Logement() {
                     </div>
                 </div>
                 <div className="rate-host-container">
-						<div className="host-container redFont">
+						<div className="host_container">
 							<Host
 								hostName={logement.host.name}
 								hostPic={logement.host.picture}
 							/>
-						</div>
-						<div className="rate-container">
-							<Rate score={logement.rating} />
 						</div>
 					</div>
             </section>
