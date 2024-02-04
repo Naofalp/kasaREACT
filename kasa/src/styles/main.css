@@ -164,6 +164,12 @@ body {
   font-size: 18px;
 }
 
+.logement-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .carroussel_container {
   display: flex;
   position: relative;
@@ -268,10 +274,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  gap: 20px;
 }
 .title-tags-container h1 {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   font-size: 18px;
   font-weight: 430;
 }
@@ -288,6 +295,41 @@ body {
 @media screen and (min-width: 769px) {
   .title-tags-container h3 {
     font-size: 18px;
+  }
+}
+
+.tags-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.tagContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 18px;
+  border-radius: 5px;
+  background: #ff6060;
+  padding: 0 30px;
+}
+@media screen and (min-width: 769px) {
+  .tagContainer {
+    flex-direction: column;
+    height: 25px;
+    border-radius: 10px;
+  }
+}
+
+.tagButton {
+  color: #FFFFFF;
+  margin: 0;
+  font-size: 10px;
+}
+@media screen and (min-width: 769px) {
+  .tagButton {
+    font-size: 14px;
   }
 }
 

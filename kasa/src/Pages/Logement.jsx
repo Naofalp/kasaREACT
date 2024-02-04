@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import Carroussel from "../components/Carroussel";
 import Tag from "../components/Tag";
 
-//Mettre ici la condition selon l'id : si l'id n'est pas referencer alors renvoi sur la page error
+//Condition selon l'id : si l'id n'est pas referencé alors renvoi sur la page error
 
 export default function Logement() {
     const { id } = useParams();
@@ -53,6 +53,17 @@ export default function Logement() {
                         ))}
                     </div>
                 </div>
+                <div className="rate-host-container">
+						<div className="host-container redFont">
+							<Host
+								hostName={logement.host.name}
+								hostPic={logement.host.picture}
+							/>
+						</div>
+						<div className="rate-container">
+							<Rate score={logement.rating} />
+						</div>
+					</div>
             </section>
         </div>
     </>
