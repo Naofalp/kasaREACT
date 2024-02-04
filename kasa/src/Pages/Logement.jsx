@@ -1,30 +1,47 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import Carroussel from "../components/Carroussel";
 
 //Mettre ici la condition selon l'id : si l'id n'est pas referencer alors renvoi sur la page error
 
 export default function Logement() {
     const { id } = useParams();
-    const [logement, setLogement] = useState ([]);
+    const [logement, setLogement] = useState(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
-        fetch('/logements.json')
-            .then(response => { return response.json(); })
-            .then(data => {
-                // Trouver le logement correspondant à l'ID
+        const fetchLogementData = async () => {
+            try {
+                const response = await fetch('/logements.json');
+                const data = await response.json();
                 const logementData = data.find(item => item.id === id);
-                setLogement(logementData);
-            })
-    }, [id]);
+                if (!logementData) {
+                    navigate("/Error");
+                } else {
+                    setLogement(logementData);
+                }
+            } catch (error) {
+                console.error("Error fetching logement data:", error);
+                navigate("/Error");
+            }
+        };
 
+        fetchLogementData();
+    }, [id, navigate]);
+
+
+    if (logement === null) {
+        return <div>Chargement en cours...</div>;
+    }
+
+    const slidesIMG = logement && logement.pictures;
+
+    console.log(logement);
 
     return <>
         <h1>logement id : {id}</h1>
-        <img src={logement.cover} />
-
-        <Carroussel />
-
+        <Carroussel slides={slidesIMG} />
 
     </>
+    
 }
