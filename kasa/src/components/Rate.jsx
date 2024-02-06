@@ -11,14 +11,14 @@ export default function Rate({ score }) {
                         key={level.toString()}
                         className="star"
                         src={etoilePleine}
-                        alt="rating star"
+                        alt={`Notation ${score} étoiles sur 5`}
                     />
                 ) : ( 
                     <img
                         key={level.toString()}
                         className="star"
                         src={etoileVide}
-                        alt="rating star"
+                        alt={`Notation ${score} étoiles sur 5`}
                     />
                 )
             )}
