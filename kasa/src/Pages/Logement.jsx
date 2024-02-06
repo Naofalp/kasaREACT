@@ -4,6 +4,7 @@ import Carroussel from "../components/Carroussel";
 import Tag from "../components/Tag";
 import Host from "../components/Host";
 import Rate from "../components/Rate";
+import collapse from "../components/Collapse";
 
 //Condition selon l'id : si l'id n'est pas referencé alors renvoi sur la page error
 
