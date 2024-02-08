@@ -40,21 +40,3 @@ main {
 	display: flex;
 	flex-direction: column;
 }
-
-/*
-.bl-msk {
-	background: $background-color;
-	mix-blend-mode: darken;
-	@include big-radius;
-}
-
-.wh-msk {
-	background: $secondary-color;
-	@include small-radius;
-
-	@media screen and (min-width: $breakpoint-desktop) {
-		@include big-radius;
-	}
-}
-
-*/

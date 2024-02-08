@@ -15,5 +15,9 @@
         color: $tertiary-color;
         font-size: $big-fontsize;
         margin: 0;
+
+        @media screen and (max-width: $breakpoint-desktop) {
+            font-size: 18px;
+        }
     }
 }
