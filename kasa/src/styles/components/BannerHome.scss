@@ -9,10 +9,31 @@
     align-items: center;
     background-blend-mode: darken;
 
+    @media screen and (max-width: $breakpoint-desktop) {
+		height: 111px;
+	}
+
+    @media screen and (max-width: 425px) {
+		justify-content: flex-start;
+	}
+
     &_title {
         font-size: 48px;
         font-weight: 400;
         color: $tertiary-color;
-    }
 
+        @media screen and (max-width: $breakpoint-desktop) {
+            font-size: 24px;
+            padding-left: 20px;
+        }
+    }
+}
+
+.mobile-break{
+    display: none;
+
+    @media screen and (max-width: 425px) {
+		height: 111px;
+        display: block;
+	}
 }
