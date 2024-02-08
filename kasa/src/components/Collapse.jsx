@@ -31,7 +31,9 @@ export default function Collapse(props) {
                 className={toggle ? "collapse_toggle animated" : "collapse_toggle"}
                 style={{ height: toggle ? `${height}` : "0px" }}
             >
-                <p aria-hidden={toggle ? "true" : "false"}>{props.textCollapse}</p>
+
+                <p aria-hidden={toggle ? "false" : "true"}>{props.textCollapse}</p>
+
             </div>
         </div>
 
