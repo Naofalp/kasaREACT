@@ -2,6 +2,11 @@
 	display: flex;
 	flex-direction: column;
     gap: 20px;
+
+    @media screen and (max-width: $breakpoint-desktop) {
+        gap: 10px;
+    }
+
 }
 .carroussel {
 
