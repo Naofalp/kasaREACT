@@ -4,7 +4,7 @@ import Carroussel from "../components/Carroussel";
 import Tag from "../components/Tag";
 import Host from "../components/Host";
 import Rate from "../components/Rate";
-import collapse from "../components/Collapse";
+import Collapse from "../components/Collapse";
 
 //Condition selon l'id : si l'id n'est pas referencé alors renvoi sur la page error
 
@@ -39,6 +39,12 @@ export default function Logement() {
     }
 
     const tags = logement.tags;
+    const equipments = logement.equipments;
+    const equipmentsList = equipments.map((item, index) => (
+        <li key={index} className="equipmentsList">
+            {item}
+        </li>
+    ));
 
     return <>
         <div className="logement-container">
@@ -56,16 +62,20 @@ export default function Logement() {
                     </div>
                 </div>
                 <div className="rate-host-container">
-						<div className="host_container">
-							<Host
-								hostName={logement.host.name}
-								hostPic={logement.host.picture}
-							/>
-						</div>
-                        <div className="rate-container">
-							<Rate score={logement.rating} />
-						</div>
-					</div>
+                    <div className="host_container">
+                        <Host
+                            hostName={logement.host.name}
+                            hostPic={logement.host.picture}
+                        />
+                    </div>
+                    <div className="rate-container">
+                        <Rate score={logement.rating} />
+                    </div>
+                </div>
+            </section>
+            <section className="collapse-container">
+                <Collapse titleCollapse="Description" textCollapse={logement.description} />
+                <Collapse titleCollapse="Équipements" textCollapse={equipmentsList} />
             </section>
         </div>
     </>
