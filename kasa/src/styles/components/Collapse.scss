@@ -1,0 +1,92 @@
+.collapse-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        flex-direction: row;
+        gap: 6%;
+    }
+}
+
+.collapse {
+    width: 100%;
+    margin: 20px 0;
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        margin: 31px auto 0;
+    }
+
+    &_visible {
+        background: $primary-color;
+        color: $tertiary-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 30px;
+        padding: 7px 15px;
+        border-radius: 5px;
+        width: 100%;
+
+        @media screen and (min-width: $breakpoint-desktop) {
+            height: 47px;
+        }
+
+        img{
+            cursor: pointer;
+        }
+
+        h2 {
+            font-size: 13px;
+            font-weight: 500;
+
+            @media screen and (min-width: $breakpoint-desktop) {
+                font-size: $big-fontsize;
+                font-weight: 500;
+            }
+        }
+    }
+
+    &_toggle {
+        opacity: 0;
+        background: $secondary-color;
+        border-radius: 5px;
+        transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-in-out;
+        
+        p {
+            color: $primary-color;
+            margin: 0;
+            padding: 22px 15px;
+            pointer-events: none;
+            font-size: 12px;
+
+            @media screen and (min-width: $breakpoint-desktop) {
+                font-size: $big-fontsize;
+            }
+        }
+    }
+}
+
+.animated {
+    opacity: 1;
+    transition: height 0.4s ease-in-out, opacity 0.4s 0.4s ease-in-out;
+}
+
+.chevron {
+    width: 9px;
+    transform: rotate(0deg);
+    transition: 0.4s 0.4s ease-in-out;
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        width: 15px;
+    }
+}
+
+.rotated {
+    transform: rotate(180deg);
+    transition: 0.4s ease-in-out;
+}
+
+.equipmentsList {
+    list-style-type: none;
+}
