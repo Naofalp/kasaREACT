@@ -14,12 +14,21 @@
         font-size: 288px;
         font-weight: 700;
         margin: 0;
+
+        @media screen and (max-width: $breakpoint-desktop) {
+            font-size: 144px;
+        }
     }
 
     &_text {
         color: $primary_color;
         font-size: 36px;
         margin: 0;
+
+        @media screen and (max-width: $breakpoint-desktop) {
+            font-size: $basic-fontsize;
+            text-align: center;
+        }
     }
 
     &_link {
