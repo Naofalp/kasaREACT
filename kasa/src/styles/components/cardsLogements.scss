@@ -15,8 +15,9 @@
         @media screen and (max-width: 426px) {
             background-color: white;
             grid-template-columns: auto;
-            margin-top: 30px;
+            margin-top: 20px;
             padding: 0px;
+            grid-row-gap: 20px;
         }
     }
 
