@@ -8,6 +8,16 @@
         flex-direction: row;
         gap: 6%;
     }
+
+    &_Apropos {
+
+        @media screen and (max-width: $breakpoint-desktop) {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 20px;
+        }
+    }
 }
 
 .collapse {

@@ -1,3 +1,11 @@
+.Apropos-container{
+  @media screen and (max-width: $breakpoint-desktop) {
+    display: flex;
+    flex-direction: column;
+		gap: 20px;
+	}
+}
+
 .banner_Apropos {
     background: $bannerApropos-background;
     border-radius: 25px;
@@ -13,3 +21,4 @@
 		height: 111px;
 	}
 }
+
