@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./Pages/Home";
 import Apropos from "./Pages/Apropos.jsx";
