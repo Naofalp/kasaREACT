@@ -1,4 +1,6 @@
-Projet 6 : Kasa Front End - OpenClassrooms
+Projet 6 : Kasa Front End
+
+Réalisé avec REACT router et SASS.
 
 
 Télécharger ' NodeJS ' si besoin ;
