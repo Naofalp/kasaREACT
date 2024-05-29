@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./Pages/Home";
@@ -10,6 +10,11 @@ import Footer from "./components/Footer";
 
 
 function App() {
+
+  useEffect(() => {
+    document.title = "Kasa";
+  }, []);
+
   return (
     <Router>
       <Header />
@@ -22,7 +27,7 @@ function App() {
           {/* Route page Logements */}
           <Route path="/Logement/:id" element={<Logement />} />
           {/* Route page d'erreur Error */}
-          <Route path='*' element={<Error/>} />
+          <Route path='*' element={<Error />} />
         </Routes>
       </main>
       <Footer />
