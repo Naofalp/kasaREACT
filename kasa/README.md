@@ -9,7 +9,7 @@ Dans ce projet, je dois implémenter le front-end d’une application en utilisa
 
 [Site live](https://kasa-367cc.web.app/) ⎜[Maquette Figma](https://www.figma.com/design/qEno0LwL4ZLkWyeY59kxp1/Kasa-FR-(Archived-2)?node-id=0-1) ⎜[English](#English) ⎜ [Installation](#Installation)
 
-## Description :
+## Description
 
 Je suis développeur front-end en freelance pour Kasa, une entreprise de location d’appartements entre particuliers.
 Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d’appartements entre particuliers en France.
@@ -21,7 +21,7 @@ Après plus de 10 ans en ASP.NET avec un code legacy important. L’entreprise s
 - [Spécifications fonctionnelles](#spécifications-fonctionnelles)
 - [Spécifications techniques](#spécifications-techniques)
 
-## Spécifications fonctionnelles :
+## Spécifications fonctionnelles
 
 -   Pour le défilement des photos dans la galerie (composant Carroussel) :
     -   Si l'utilisateur se trouve à la première image et qu'il clique sur "précédent", la galerie affiche la dernière image.
@@ -33,7 +33,7 @@ Après plus de 10 ans en ASP.NET avec un code legacy important. L’entreprise s
     -   Si le Collapse est ouvert, le clic de l'utilisateur permet de le fermer.
     -   Inversement, si le Collapse est fermé, un clic permet de l'ouvrir.
 
-## Spécifications techniques :
+## Spécifications techniques
 
 -   Outils :
     -   Create React App.
@@ -55,7 +55,7 @@ Après plus de 10 ans en ASP.NET avec un code legacy important. L’entreprise s
     -   La page 404 est renvoyée pour chaque route inexistante, ou si une valeur présente dans l’URL ne fait pas partie des données renseignées.
     -   Général : Le code ne doit pas produire d'erreur ou de warning dans la console.
 
-## Installation :
+## Installation
 
 1. Cloner le repository:
 
