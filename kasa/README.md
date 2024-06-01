@@ -7,7 +7,7 @@
 
 Dans ce projet, je dois implémenter le front-end d’une application en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive.
 
-[Site live](https://kasa-367cc.web.app/) ⎜[Maquette Figma](https://www.figma.com/design/qEno0LwL4ZLkWyeY59kxp1/Kasa-FR-(Archived-2)?node-id=0-1) ⎜[English](#English) ⎜ [Installation](#installation)
+[Site live](https://kasa-367cc.web.app/) ⎜[Maquette Figma](https://www.figma.com/design/qEno0LwL4ZLkWyeY59kxp1/Kasa-FR-(Archived-2)?node-id=0-1) ⎜[English](#English) ⎜ [Installation](#Installation)
 
 ## Description :
 
@@ -59,7 +59,7 @@ Après plus de 10 ans en ASP.NET avec un code legacy important. L’entreprise s
 
 1. Cloner le repository:
 
--   `git clone https://github.com/ArthurBlanc/Kasa`
+-   `git clone https://github.com/Naofalp/kasaREACT.git`
 
 2. Installer toutes les dépendances pour le front-end:
 
