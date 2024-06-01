@@ -1,4 +1,4 @@
-<img src="src/assets/logoKasa.svg" alt="Logo de kasa" width="100"/>
+<img src="kasa/src/assets/logoKasa.svg" alt="Logo de kasa" width="100"/>
 
 ![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
